@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
+import { Scene } from './utils/Scene';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className='App'>
+    <div className='bg-black'>
       <Navbar />
-      <p className='text-rose-500 text-3xl underline font-bod text-center m-20'>
-        3D game website!
-      </p>
+      <Hero />
+      <Scene />
     </div>
   );
 }
